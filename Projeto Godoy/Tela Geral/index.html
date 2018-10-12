@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper ">
+            <a href="#!" class="brand-logo">Logo</a>
+            <form>
+                <!-- O botão de pesquisa deve estar dentro de um form -->
+                <div class="input-field right">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons white-text">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="row">
+        <!-- Linha do form e da tabela (row)-->
+        <form class="teal darken-4 col s3">
+            <!-- Parte do form (col s3) -->
+            <div class="col s12">
+                <h5 class="white-text">Motorista:</h5>
+            </div>
+            <div class="input-field col s5 ">
+                <input id="nome" type="text" class="validate white-text">
+                <label for="nome" class="white-text">Nome</label>
+            </div>
+            <div class="input-field col s7">
+                <input id="sobrenome" type="text" class="validate white-text">
+                <label for="sobrenome" class="white-text">Sobrenome</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="cpf" type="text" class="validate white-text">
+                <label for="cpf" class="white-text">CPF</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="rg" type="text" class="validate white-text">
+                <label for="rg" class="white-text">RG</label>
+            </div>
+            <div class="input-field col s7">
+                <input id="cnh" type="text" class="validate white-text">
+                <label for="cnh" class="white-text">Nº da CNH</label>
+            </div>
+            <div class="input-field col s5">
+                <input id="sexo" type="text" class="validate white-text">
+                <label for="sexo" class="white-text">Sexo</label>
+            </div>
+
+            <div class="col s12">
+                <h5 class="white-text">Veículo:</h5>
+            </div>
+            <div class="input-field col s6 ">
+                <input id="marca" type="text" class="validate white-text">
+                <label for="marca" class="white-text">Marca</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="modelo" type="text" class="validate white-text">
+                <label for="modelo" class="white-text">Modelo</label>
+            </div>
+            <div class="input-field col s3">
+                <input id="ano" type="text" class="validate white-text">
+                <label for="ano" class="white-text">Ano</label>
+            </div>
+            <div class="input-field col s9">
+                <input id="placa" type="text" class="validate white-text">
+                <label for="placa" class="white-text">Placa do Veículo</label>
+            </div>
+            <div class="row">
+                <!-- O botão tem que ter uma row exclusiva para que fique correto no código -->
+                <div class="col s12 center">
+                    <button class="btn waves-effect waves-light green" type="submit">CADASTRAR</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="col s9">
+            <!-- Parte da tabela (col s9)-->
+            <table class="centered striped">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>CPF</th>
+                        <th>Placa do Veículo</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Ano</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>232.653.126.11</td>
+                        <td>HPV-2156</td>
+                        <td>Dodge</td>
+                        <td>RAM</td>
+                        <td>2010</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td>123.321.145-55</td>
+                        <td>SMR-8412</td>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>2012</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td>125.312.531-54</td>
+                        <td>ASX-2485</td>
+                        <td>Fiat</td>
+                        <td>Uno</td>
+                        <td>2002</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>232.653.126.11</td>
+                        <td>HPV-2156</td>
+                        <td>Chevrolet</td>
+                        <td>Celta</td>
+                        <td>2010</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Eduardo</td>
+                        <td>Godoy</td>
+                        <td>231.523.421.66</td>
+                        <td>DUD-1801</td>
+                        <td>Volkswagem</td>
+                        <td>Fusca</td>
+                        <td>1990</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>André</td>
+                        <td>Violin</td>
+                        <td>485.235.214.55</td>
+                        <td>ASX-2485</td>
+                        <td>Lamborghini</td>
+                        <td>Aventador</td>
+                        <td>2018</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Cláudio</td>
+                        <td>Sanavria</td>
+                        <td>425.221.422-22</td>
+                        <td>PTC-1313</td>
+                        <td>Fiat</td>
+                        <td>Pálio</td>
+                        <td>1996</td>
+                        <td class="right"><a class="btn-floating btn waves-effect waves-light green"><i class="material-icons">arrow_drop_down</i></a></td>
+                        <td><a class=" btn-floating btn waves-effect waves-light blue"><i class="tiny material-icons">create</i></a></td>
+                        <td class="left"><a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts para animações no formulário -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
